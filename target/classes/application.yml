@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:8761}
+  servlet:
+    context-path: /
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:${server.port}/${ZONE:eureka}
+    register-with-eureka: false
+    fetch-registry: false
+spring:
+  application:
+    name: discovery-service
+  security:
+    user:
+      name: ${SECNAME:dev}
+      password: ${SECPW:dev}
+management:
+  server:
+    port: ${ACTPORT:0}
+  endpoints:
+    web:
+      exposure:
+        include: '*'
