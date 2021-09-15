@@ -1,2 +1,2 @@
-com\beardtrust\webapp\discoveryservice\security\SecurityConfig.class
-com\beardtrust\webapp\discoveryservice\DiscoveryServiceApplication.class
+com/beardtrust/webapp/discoveryservice/DiscoveryServiceApplication.class
+com/beardtrust/webapp/discoveryservice/security/SecurityConfig.class
